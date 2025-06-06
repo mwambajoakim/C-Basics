@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-main()
+int main()
 {
-    printf("hello, world\n");    /* \n is valid */
-    printf("hello, world\c");    /* \c is invalid */
+    printf("hello, world\n");    /* new linw */
+    printf("hello, world\f");    /* seems to be new line*/
     printf("hello, world\7");    /* \7 is valid (bell) */
     printf("hello, world\?");    /* \? is valid */
-    printf("hello, world\x");    /* \x is invalid */
+    printf("hello, world\t");    /* tab character*/
+
+    return (0);
 } 
